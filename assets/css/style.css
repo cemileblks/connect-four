@@ -12,14 +12,21 @@ body {
     border: 1px solid;
     display: flex;
     flex-wrap: wrap;
-    height: 251px;
-    width: 294px;
+    /* height: 251px;
+    width: 294px; */
+
+    width: 574px;
+        height: 491px;
+
     background-color: rgb(223, 214, 224);
+    cursor: pointer;
 }
 
 .grid div {
-    height: 40px;
-    width: 40px;
+    /* height: 40px;
+    width: 40px; */
+    height: 80px;
+    width: 80px;
     border: 1px solid rgb(197, 197, 197);
     border-radius: 50%;
     background-color: white;
@@ -28,11 +35,14 @@ body {
 .player-one {
     background-color: #ffd670 !important;
     border-radius: 20px;
+    cursor: default;
 }
 
 .player-two {
     background-color: #fc8eac !important;
     border-radius: 10px;
+    cursor: default;
+
 }
 
 #current-player {
@@ -44,3 +54,16 @@ body {
     border: none;
     background-color: white;
 }
+
+@media (max-width: 575px){
+    .grid {
+        width: 370px;
+        height: 311px;
+    }
+    .grid div {
+        height: 50px;
+        width: 50px;
+}
+}
+
+
